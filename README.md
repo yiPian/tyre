@@ -60,11 +60,10 @@ data.vue内容如下:
 
 ```
  <template>
-    <h1> <%= title %> </h1>
-    <div>
-    <% if (true) { %>
-        <%# input %>
-    <% } %>
+    <h1> Hello Tyre </h1>
+    <div> 
+        <input v-model="val">
+    </div>
     </div>
  </template>
  <script>
