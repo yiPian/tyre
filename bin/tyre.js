@@ -7,7 +7,6 @@ program
     .usage('[config path]')
     .parse(process.argv);
 // 获得配置文件路径
-var path = program.args[0];
-if(!path) program.help();
+if(program.args.length < 1) program.help();
 // 开始执行
-start(path);
+start(program.args);
